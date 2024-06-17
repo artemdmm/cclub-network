@@ -7,7 +7,6 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Login from './activities/Login';
 import Home from './activities/Home';
 import Room from './activities/Room';
-import Map from './activities/Map';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -39,16 +38,6 @@ function Tabs() {
               headerShown: false,
               tabBarIcon: ({ color, size }) => (
                 <Ionicons name="log-in" color={color} size={size} />
-              ),
-            }}
-        />
-        <Tab.Screen 
-            name='Map'
-            component={Map}
-            options={{
-              headerShown: false,
-              tabBarIcon: ({ color, size }) => (
-                <Ionicons name="map" color={color} size={size} />
               ),
             }}
         />

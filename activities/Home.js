@@ -50,7 +50,9 @@ const Home = ({ navigation }) => {
     else {
         if (currentPerm) {
             return (
-                <Rooms />
+                <View style={styles.container}>
+                    <Title style={styles.titleText}>Связь с клиентами реализована через серверное приложение</Title>
+                </View>
             );
         }
         else {
